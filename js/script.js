@@ -1,4 +1,4 @@
-import "/js/clock.js"
+import "/clock.js"
 
 if (!window.AudioContext) alert('you browser doesnt support Web Audio API');
 
