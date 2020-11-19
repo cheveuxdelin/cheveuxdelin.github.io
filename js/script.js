@@ -1,4 +1,4 @@
-import "/js/clock.js"
+import "https://cheveuxdelin.github.io/metronomo/js/clock.js"
 
 if (!window.AudioContext) alert('you browser doesnt support Web Audio API');
 
