@@ -1,12 +1,10 @@
 import "/js/clock.js"
 
 if (!window.AudioContext) alert('you browser doesnt support Web Audio API');
-let context = new AudioContext();
-let clock = new WAAClock(context);
 
 let beats = [];
 let events = [];
-
+let clock;
 let bpm = 60;
 
 class beat {
@@ -33,6 +31,10 @@ class beat {
 
 let addBeat = function(audioname, speed, vol){
     beats.push(new beat(audioname, speed, vol));
+}
+
+document.getElementById("start").onclick = function(){
+    clock = new WAAClock(new AudioContext);
 }
 
 document.getElementById("play").onclick = function () {
