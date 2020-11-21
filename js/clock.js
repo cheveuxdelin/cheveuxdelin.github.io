@@ -131,7 +131,7 @@ Event.prototype._execute = function() {
     this.func(this)
   else {
     if (this.onexpired) this.onexpired(this)
-    console.warn('event expired')
+    //console.warn('event expired')
   }
   // In the case `schedule` is called inside `func`, we need to avoid
   // overrwriting with yet another `schedule` 
